@@ -39,7 +39,7 @@ No host ROS or Gazebo installation is required.
 ## 3. Make QGroundControl executable
 
 ```bash
-chmod +x /home/ppatel/Applications/QGroundControl-v5.1.3-x86_64.AppImage
+chmod +x /home/ppatel/Applications/QGroundControl-v5.1.4-x86_64.AppImage
 ```
 
 Launch it normally from the desktop or terminal. QGroundControl should

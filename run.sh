@@ -162,7 +162,7 @@ echo "MAVLink: ${MAVLINK_QGC:-udp:127.0.0.1:14550} (QGC), ${MAVLINK_API:-udp:127
 if pgrep -f '[Q]GroundControl' >/dev/null 2>&1; then
     echo "QGroundControl is running and should auto-connect on UDP 14550."
 else
-    echo "Start /home/ppatel/Applications/QGroundControl-v5.1.3-x86_64.AppImage to use the ground station."
+    echo "Start /home/ppatel/Applications/QGroundControl-v5.1.4-x86_64.AppImage to use the ground station."
 fi
 
 container_started=1

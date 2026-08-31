@@ -29,7 +29,7 @@ of the competition LPV.
 QGroundControl stays outside Docker. On this workstation it is located at:
 
 ```text
-/home/ppatel/Applications/QGroundControl-v5.1.3-x86_64.AppImage
+/home/ppatel/Applications/QGroundControl-v5.1.4-x86_64.AppImage
 ```
 
 ## Start here
