@@ -73,6 +73,17 @@ For calm water, use:
 WORLD=blueboat_calm.sdf make run
 ```
 
+For a rougher harbor exercise with a collidable dock, use:
+
+```bash
+WORLD=blueboat_harbor.sdf make run
+```
+
+The harbor world uses 0.25 m wave amplitude (0.5 m peak-to-trough) and places
+BlueBoat about 11 m from an 18 m fixed dock. It is intended for docking,
+station-keeping, and later perception experiments; the standard smoke-test
+tolerances are calibrated for the default mild-wave world.
+
 For CPU rendering when GPU access is unavailable:
 
 ```bash
@@ -97,7 +108,7 @@ Boat_Sim_Docker/
 ├── smoke-test.py              # Guided/Hold/RTL autonomous acceptance test
 ├── Makefile                   # Student-facing command surface
 ├── config/blueboat.parm       # Boat-specific ArduPilot parameters
-├── worlds/                    # Mild-wave and calm-water worlds
+├── worlds/                    # Mild, calm, and rough harbor worlds
 ├── docs/                      # Setup, operation, troubleshooting, maintenance
 └── logs/                      # Runtime logs and persistent virtual EEPROM
 ```
