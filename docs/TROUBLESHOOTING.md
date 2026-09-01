@@ -69,7 +69,15 @@ WIPE_PARAMS=1 make run
 
 ## The boat is too difficult to tune in waves
 
-Use the calm world to distinguish controller problems from wave disturbance:
+The harbor world is intentionally much rougher than the default. Return to the
+mild baseline or use calm water to distinguish controller problems from wave
+disturbance:
+
+```bash
+WORLD=blueboat_waves.sdf make run
+```
+
+or:
 
 ```bash
 WORLD=blueboat_calm.sdf make run

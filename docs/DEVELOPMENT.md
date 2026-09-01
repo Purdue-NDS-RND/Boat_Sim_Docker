@@ -35,7 +35,7 @@ SITL parameters once, and repeat the full smoke test.
 
 | Variable | Default | Purpose |
 |---|---|---|
-| `WORLD` | `blueboat_waves.sdf` | World available through Gazebo's resource path |
+| `WORLD` | `blueboat_waves.sdf` | World available through Gazebo's resource path; also supports `blueboat_calm.sdf` and `blueboat_harbor.sdf` |
 | `MAVLINK_QGC` | `udp:127.0.0.1:14550` | Host QGroundControl output |
 | `MAVLINK_API` | `udp:127.0.0.1:14551` | Independent student/test output |
 | `SOFTWARE_RENDERING` | `0` | Use Mesa CPU rendering when set to `1` |

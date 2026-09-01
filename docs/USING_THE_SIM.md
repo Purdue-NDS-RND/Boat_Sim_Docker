@@ -55,6 +55,24 @@ removing buoyancy or hydrodynamic forces:
 WORLD=blueboat_calm.sdf make run
 ```
 
+## Rough-water dock practice
+
+Start the optional harbor world with:
+
+```bash
+WORLD=blueboat_harbor.sdf make run
+```
+
+This world increases wave amplitude from 0.08 m to 0.25 m and starts BlueBoat
+roughly 11 m north of a fixed 18 m dock. The wooden deck and its three pilings
+have collision geometry. Yellow edge strips make the dock easier to
+distinguish in the Gazebo camera.
+
+Use this world for manual docking, Guided targets near the dock, controller
+tuning, or future vision work. Run the automated acceptance test in the
+default mild-wave world because its timing and distance thresholds were tuned
+for that baseline.
+
 ## Logs and state
 
 Every run writes:

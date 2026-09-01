@@ -14,6 +14,7 @@ python3 -m py_compile smoke-test.py
 required=(
     Dockerfile compose.yaml compose.gpu.yaml Makefile
     config/blueboat.parm worlds/blueboat_waves.sdf worlds/blueboat_calm.sdf
+    worlds/blueboat_harbor.sdf
     README.md docs/SETUP.md docs/USING_THE_SIM.md docs/TROUBLESHOOTING.md docs/DEVELOPMENT.md
 )
 for path in "${required[@]}"; do
@@ -33,8 +34,12 @@ done
 
 grep -q '<uri>model://blueboat</uri>' worlds/blueboat_waves.sdf
 grep -q '<uri>model://blueboat</uri>' worlds/blueboat_calm.sdf
+grep -q '<uri>model://blueboat</uri>' worlds/blueboat_harbor.sdf
 grep -q '<amplitude>0.08</amplitude>' worlds/blueboat_waves.sdf
 grep -q '<amplitude>0.0</amplitude>' worlds/blueboat_calm.sdf
+grep -q '<amplitude>0.25</amplitude>' worlds/blueboat_harbor.sdf
+grep -q '<model name="dock">' worlds/blueboat_harbor.sdf
+grep -q '<collision name="deck_collision">' worlds/blueboat_harbor.sdf
 grep -Eq '^FRAME_CLASS[[:space:]]+2$' config/blueboat.parm
 
 if command -v docker >/dev/null 2>&1 && docker compose version >/dev/null 2>&1; then
